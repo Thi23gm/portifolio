@@ -24,7 +24,7 @@
 }
 
 .gradient,
-.active {
+.actives {
   background: linear-gradient(
     92.23deg,
     #406aff 21.43%,
@@ -34,7 +34,7 @@
   );
 }
 
-.active {
+.actives {
   color: #fff;
   padding: 1rem;
   border-radius: 100%;
