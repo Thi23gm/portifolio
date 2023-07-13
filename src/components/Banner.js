@@ -4,6 +4,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from 'react-scroll';
 
 const Banner = () => {
   return (
@@ -17,7 +18,7 @@ const Banner = () => {
             <motion.div variants={fadeIn('up', 0.4)} initial='hidden' whileInView={'show'} viewport={{once:false, amount: 0.7}} className="mb-6 text[36px] lg:text-[50px] font-secondary font-semibold uppercase leading-[1]">
               <span className='mr-2 text-white'>I am a</span>
               <TypeAnimation sequence={[
-                'Softwere Engenier',
+                'Softwere Engineer',
                 2000,
                 'Programmer',
                 2000,
@@ -25,25 +26,25 @@ const Banner = () => {
                 2000,
               ]}
               speed={50}
-              className="text-accent"
+              className="text-[#F0B51F]"
               wrapper='span'
               repeat={Infinity}
               />
             </motion.div>
               <motion.p variants={fadeIn('up', 0.5)} initial='hidden' whileInView={'show'} viewport={{once:false, amount: 0.7}} className="mb-8 max-w-lg mx-auto lg:mx-0">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, aperiam? Nesciunt vitae error assumenda aliquam, ex quia non labore unde voluptate corrupti minima. Sit facere deserunt inventore voluptatem fuga quibusdam!
+              Estudante de Ciências da Computação na PUC Minas e desenvolvedor Full Stack com experiência em Javascript, NodeJS e ReactJS. Habilidades em bancos de dados, versionamento e modelos ágeis. Comprometido com soluções de qualidade e busca constante por aprimoramento.
               </motion.p>
               <motion.div variants={fadeIn('up', 0.6)} initial='hidden' whileInView={'show'} viewport={{once:false, amount: 0.7}} className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0">
-                <a href="#" className="text-gradient btn-link">My Protifolio</a>
+                <Link to='work' smooth={true} className="text-gradient btn-link">My Protifolio</Link>
               </motion.div>
             <motion.div variants={fadeIn('up', 0.7)} initial='hidden' whileInView={'show'} viewport={{once:false, amount: 0.7}} className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
-              <a href="#">
+              <a target='blank' href="https://github.com/Thi23gm">
                 <FaGithub/>
               </a>
-              <a href="#">
+              <a target='blank' href="https://www.instagram.com/thi23gm/">
                 <FaInstagram/>
               </a>
-              <a href="#">
+              <a target='blank' href="https://www.linkedin.com/in/thiago-martins-9679861b0/">
                 <FaLinkedin/>
               </a>
             </motion.div>
